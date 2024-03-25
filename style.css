@@ -440,6 +440,6 @@ span {
         flex: 1 1 calc(50% - 1rem); /* Adjust the width of each card */
     }
 }
-.logoo{height:50px;
-       width:50px;
+.logoo{height:40px;
+       width:40px;
       }
