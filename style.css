@@ -202,13 +202,14 @@ span {
 
 .services-continer .services-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
-    box-shadow: 0 0 1rem rgba(0, 0, 255, 0.5);
+    box-shadow: 0 0 1.7rem rgb(0, 152, 160);
     transition: .5s ease;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(3, 4, 57, 0.7));
+    /* Update the RGBA values above as per your --main-color variable and desired transparency */
 }
 .services-continer .services-box:hover {
     border-color: var(--main-color);
