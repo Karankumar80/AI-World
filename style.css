@@ -218,10 +218,15 @@ span {
 }
 
 .services-box i {
-    font-size: 5rem;
-    color: var(--main-color);
-    margin-bottom: 0.6rem; /* Adjust the margin bottom as needed */
+    font-size: 5rem; /* Sets the size of the icon to 5rem */
+    color: var(--main-color); /* Sets the icon color to whatever is defined as your main color */
+    margin-bottom: 0.6rem; /* Adds a small space below the icon */
+    /* Adding a glowing effect */
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.6), /* Inner glow */
+                 0 0 20px rgba(0, 255, 204, 0.4), /* Mid glow */
+                 0 0 40px rgba(0, 255, 204, 0.2); /* Outer glow */
 }
+
 
 
 .services-box h3 {
