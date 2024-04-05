@@ -460,3 +460,76 @@ span {
 .voic{
     height:470px;
 }
+/* Base styling for the subscribe container */
+.newsletter-subscribe-bar {
+   
+    color: #01ec96;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.newsletter-content {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input[type="email"] {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: white;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0); /* Change font color to white */
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s;
+    border: none; /* Assuming you want to remove the default border */
+}
+
+
+.subscribe-button {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.subscribe-button:hover {
+    background-color: #22dd9c;
+}
+
+@media (max-width: 768px) {
+    .newsletter-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .newsletter-form input[type="email"], .subscribe-button {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .newsletter-form input[type="email"] {
+        margin-bottom: 10px;
+    }
+}
