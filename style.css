@@ -485,7 +485,7 @@ span {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: white;
-    border-radius: 4rem;
+    border-radius: 1rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: rgb(0, 0, 0); /* Change font color to white */
@@ -500,7 +500,7 @@ span {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
-    border-radius: 4rem;
+    border-radius: 1rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--second-bg-color);
