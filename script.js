@@ -41,7 +41,7 @@ window.onscroll = () => {
 
 
  const typed = new Typed('.multiple-text', {
-    strings:['all AI tools', 'AI video editor', 'AI photo generator', 'prompt generator '],
+    strings:['all AI tools', 'AI video generator', 'AI photo generator', 'prompt generator '],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
