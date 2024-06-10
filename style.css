@@ -61,19 +61,64 @@ section{
     cursor: default;
 
 }
-.navbar a {
+/* Styles for navigation links */
+.navbar a, .navbar button {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .navbar a:hover ,
-.navbar a.active {
+.navbar button:hover,
+.navbar a.active,
+.navbar button.active {
     color: var(--main-color);
-
-
 }
+
+/* Style for desktop */
+@media (min-width: 768px) {
+    .navbar a, .navbar button {
+        border-radius: 0.5rem;
+        background-color: var(--background-color);
+        border: 2px solid transparent;
+    }
+
+    .navbar button {
+        background-color: transparent;
+        border: 2px solid var(--background-color);
+    }
+
+    .navbar a:hover ,
+    .navbar button:hover,
+    .navbar a.active,
+    .navbar button.active {
+        background-color: var(--main-color);
+        color: white;
+    }
+}
+
+/* Additional styles for desktop */
+@media (min-width: 768px) {
+    /* Styles for the navigation section */
+    .navigation-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem; /* Adjust margin as needed */
+    }
+
+    /* Styles for the navigation buttons */
+    .navigation-section button {
+        margin: 0.5rem; /* Adjust margin between buttons */
+    }
+}
+
+
 
 #menu-icon {
     font-size: 3.6rem;
@@ -533,3 +578,4 @@ span {
         margin-bottom: 10px;
     }
 }
+
